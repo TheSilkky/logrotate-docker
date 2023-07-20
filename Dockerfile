@@ -8,7 +8,7 @@ FROM alpine:${ALPINE_VERSION}
 RUN apk add --no-cache \
     ca-certificates \
     tzdata \
-    tini \
+    bash \
     logrotate \
     docker-cli
 
