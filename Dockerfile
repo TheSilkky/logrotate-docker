@@ -16,7 +16,9 @@ COPY --chmod=755 entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["/usr/sbin/logrotate", "--verbose", "/etc/logrotate.conf"]
+CMD ["/usr/sbin/logrotate", "--verbose", "--state", "/var/lib/logrotate/logrotate.status", "/etc/logrotate.conf"]
+
+VOLUME ["/var/lib/logrotate"]
 
 LABEL org.opencontainers.image.source="https://github.com/traefik/traefik.git"
 LABEL org.opencontainers.image.licenses="MIT"
