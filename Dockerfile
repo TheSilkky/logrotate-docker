@@ -18,8 +18,6 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["/usr/sbin/logrotate", "--verbose", "/etc/logrotate.conf"]
 
-VOLUME ["/var/lib/logrotate"]
-
 LABEL org.opencontainers.image.source="https://github.com/traefik/traefik.git"
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.title="Traefik"
