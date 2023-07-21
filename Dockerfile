@@ -20,8 +20,7 @@ CMD ["/usr/sbin/logrotate", "--verbose", "--state", "/var/lib/logrotate/logrotat
 
 VOLUME ["/var/lib/logrotate"]
 
-LABEL org.opencontainers.image.source="https://github.com/traefik/traefik.git"
-LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.title="Traefik"
-LABEL org.opencontainers.image.description="A modern reverse-proxy"
-LABEL org.opencontainers.image.version="v${TRAEFIK_VERSION}"
+LABEL org.opencontainers.image.source="https://github.com/logrotate/logrotate.git"
+LABEL org.opencontainers.image.licenses="GPL-2.0"
+LABEL org.opencontainers.image.title="Logrotate"
+LABEL org.opencontainers.image.description="The logrotate utility is designed to simplify the administration of log files on a system which generates a lot of log files."
